@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--Page Title-->
+	<title>Title</title>
+	<!--SEO-->
+	<meta name="description" content="Description">
+	<meta name="keywords" content="keyword1, keyword2">
+	<!--Additional meta tags-->
+	<meta name="msthemecompatible" content="no">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<!--Favicons-->
+	<!-- <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png"> -->
+	<!-- <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png"> -->
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon.png">
+	<link rel="manifest" href="./favicons/site.webmanifest">
+	<link rel="mask-icon" href="./favicons/favicon.png" color="#5bbad5">
+	<link rel="shortcut icon" href="./favicons/favicon.png">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="./favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<!--Styles-->
+	<link id="app-css" rel="stylesheet" href="./assets/styles/app.min.css">
+	<link href="PTRootUI-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link href="PTRootUI-Medium.woff2" as="font" type="font/woff2" crossorigin>
+	<link href="PTRootUI-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<!-- <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+  <script type="text/javascript">
+    // Создает обработчик события window.onLoad
+    YMaps.jQuery(function () {
+        // Создает экземпляр карты и привязывает его к созданному контейнеру
+        var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+        // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+        var point = new YMaps.GeoPoint(37.609218,55.753559); // Координаты центра Москвы
+        map.setCenter(point);
+    })
+  </script> -->
+	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+	<script>
+		document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');
+		if (!('ontouchstart' in document.documentElement)) {
+			document.documentElement.className += ' no-touchevents';
+		} else {
+			document.documentElement.className += ' touchevents';
+		}
+	</script>
+	<script src="https://use.fontawesome.com/e9c73d6974.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"> </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<style>
+		.goods-item__img {
+			cursor: url('../images/order-btn.svg'), auto;
+		}
+
+		.good-item__title {
+			cursor: url('../images/order-btn.svg'), auto;
+		}
+	</style>
+</head>
+
+<body>
+	<noscript>
+		<div class="no-js-warning">Для корректной работы сайта <b>включите JavaScript</b> в браузере</div>
+	</noscript>
+	<div class="mask">
+		<div class="loader"></div>
+	</div>
+	<header class="header">
+		<section id="header" class="header-wht">
+			<div class="container">
+				<a href="/" class="logo header-logo">
+					<img class="logo-img img-black" src="assets/images/menu-logo.svg" alt="Antnea">
+				</a>
+				<button class="header-menu btn-black"><span class="menu-symbol-btn">+</span> <span class="menu-title-btn" data-close-menu='Меню' data-open-menu='Закрыть'>Меню</span></button>
+				<ul class="header-btns">
+					<li class="header-btns__item">
+						<a href="/contacts.html" data-hover="Контакты" class="header-links-black header-contacts hide-btn">Контакты</a>
+					</li>
+					<li class="header-btns__item">
+						<a href="#" data-hover="Заказать" class="header-links-black header-order">Заказать</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="menu">
+			<div class="container">
+				<div class="menu-container">
+					<nav class="nav">
+						<div class="nav-link__wrapper">
+							<div href="#" class="nav-link open-help-menu">
+								Пены
+							</div>
+							<ul class="nav-link__list">
+								<li class="nav-link__list-item">
+									<a href="/living.html" data-hover="LIVING & COMFORT" class="nav-link__list-item_link">
+										LIVING & COMFORT
+									</a>
+								</li>
+								<li class="nav-link__list-item">
+									<a href="/motion.html" data-hover="MOTION" class="nav-link__list-item_link">
+										MOTION
+									</a>
+								</li>
+								<li class="nav-link__list-item">
+									<a href="/industrial.html" data-hover="INDUSTRIAL" class="nav-link__list-item_link">
+										INDUSTRIAL
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a href="/duplicate-serv.html" class="nav-link">
+							Дублированные материалы и услуги по дублированию
+						</a>
+						<a href="/foam-details.html" class="nav-link">
+							Формованные детали и услуги по формовке
+						</a>
+						<a href="/cutting.html" class="nav-link">
+							Контурная резка
+						</a>
+					</nav>
+					<ul class="about-company about-company__menu">
+						<li class="about-company__list-item">
+							<a href="/about-company.html" data-hover="О компании" class="about-company__link">
+								О компании
+							</a>
+						</li>
+						<li class="about-company__list-item">
+							<a href="/blog-page.html" data-hover="Блог" class="about-company__link">
+								Блог
+							</a>
+						</li>
+						<li class="about-company__list-item">
+							<a href="/contacts.html" data-hover="Контакты" class="about-company__link">
+								Контакты
+							</a>
+						</li>
+						<li class="about-company__list-item">
+							<hr class="header-line">
+						</li>
+						<li class="about-company__list-item">
+							<a href="tel:+375 17 270 07 45" data-hover="+375 17 270 07 45" class="about-company__link">
+								+375 17 270 07 45
+							</a>
+						</li>
+						<li class="about-company__list-item">
+							<a href="info@antyneaform.com" data-hover=" info@antyneaform.com" class="about-company__link">
+								info@antyneaform.com
+							</a>
+						</li>
+						<li class="menu-lang__btns">
+							<div class="menu-lang__btns-block">
+								<button class="lang-btn active">Rus</button>
+								<button class="lang-btn">Eng</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<ul class="social-link">
+					<li class="about-company__list-item_inst">
+						<a href="#" data-hover="Instagram" class="inst">Instagram</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</header>
+	<main class="main">
+		<div class="foam-service-title">
+			<h1 class="service-title">
+				Формованные детали и услуги
+			</h1>
+			<div class="service-title__bg">
+				<img src="assets/images/foam-service-bg1.png" alt="Antynea">
+			</div>
+			<div class="service-description">
+				<div class="service-description__item">
+					Производство формованных деталей – один из способов придания плоским деталям объема заданных размеров с использованием индивидуальных пресс-форм.
+				</div>
+				<div class="service-description__item">
+					Формованные детали обладают высокой плотностью, точностью, цельностью, и, следовательно, не требуют дальнейшей доработки.
+				</div>
+			</div>
+		</div>
+		<div class="foam-service-adv">
+			<div class="service-adv__title">
+				Преимущества формованных деталей:
+			</div>
+			<div class="service-adv">
+				<div class="service-adv__item">
+					<img src="assets/images/foam-adv1.png" alt="Antynea">
+					<div class="service-adv__item-title">
+						возможность изготовления 3D форм любой сложности
+					</div>
+				</div>
+				<div class="service-adv__item">
+					<img src="assets/images/foam-adv2.png" alt="Antynea">
+					<div class="service-adv__item-title">
+						эксклюзивность совместных разработок
+					</div>
+				</div>
+				<div class="service-adv__item">
+					<img src="assets/images/foam-adv3.png" alt="Antynea">
+					<div class="service-adv__item-title">
+						комфортные ощущения в использовании посредством придания деталям эргономичной формы
+					</div>
+				</div>
+				<div class="service-adv__item">
+					<img src="assets/images/foam-adv4.png" alt="Antynea">
+					<div class="service-adv__item-title">
+						высокая точность
+					</div>
+				</div>
+				<div class="service-adv__item">
+					<img src="assets/images/foam-adv5.png" alt="Antynea">
+					<div class="service-adv__item-title">
+						продленный срок службы с сохранением первоначальной формы
+					</div>
+				</div>
+				<div class="service-adv__item">
+					<button data-form-title="ФОРМОВАННЫЕ ДЕТАЛИ И УСЛУГИ" data-form-cuttingTitle="Контурная резка" class="service-adv__btn">Узнать больше</button>
+				</div>
+			</div>
+		</div>
+		<div class="molding-service">
+			<h1 class="molding-title">
+				УСЛУГИ ПО ФОРМОВКЕ
+			</h1>
+			<div class="molding">
+				<div class="molding-item">
+					Антинея Форм предоставляет услуги по разработке и изготовлению формованных деталей любой сложности и конфигурации.
+				</div>
+				<div class="molding-item">
+					Высокоточное оборудование и профессиональный инженерный состав с опытом в сфере формования деталей более 15 лет позволят вам сократить финансовые затраты и время на разработку новых продуктов. Ведь надежность поставщика – ключевой компонент успеха и устойчивости компании.
+				</div>
+				<div class="molding-item">
+					Антинея Форм предоставляет полный цикл производства продукции, от проектирования до изготовления технологической оснастки на специальном CNC оборудовании, а также гарантированно обеспечит эксклюзивность совместных разработок.
+				</div>
+			</div>
+			<div class="molding-btn-block">
+				<button data-form-title="Заказать услуги по формовке" class="molding-btn">
+					заказать услуги по формовке
+				</button>
+			</div>
+		</div>
+	</main>
+	<footer class="footer black panel hidden-header">
+		<div class="container-animate">
+			<div class="link-wrapper">
+				<div class="footer-link-wrapper">
+					<a href="#" class="footer-link">
+						info@antyneaform.com
+					</a>
+				</div>
+			</div>
+			<div class="footer-image-wrapper">
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img1.png" alt="Antnea">
+				</a>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img2.png" alt="Antnea">
+				</a>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img3.png" alt="Antnea">
+				</a>
+				<div class="footer-image-link">
+					<a href="#" class="image-link">
+						@antynea_group
+						<i class="fa fa-heart"></i>
+					</a>
+				</div>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img4.png" alt="Antnea">
+				</a>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img5.png" alt="Antnea">
+				</a>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img6.png" alt="Antnea">
+				</a>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img7.png" alt="Antnea">
+				</a>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img8.png" alt="Antnea">
+				</a>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img9.png" alt="Antnea">
+				</a>
+			</div>
+			<div class="mobile-footer-image__slider-wrapper">
+				<div class="footer-image-link">
+					<a href="#" class="image-link">
+						@antynea_group
+						<i class="fa fa-heart"></i>
+					</a>
+				</div>
+				<div class="footer-slider">
+					<div class="footer-slider-wrapper swiper-wrapper">
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img1.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img2.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img3.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img4.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img5.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img6.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img7.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img8.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img9.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img3.png" alt="Antnea">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-wrapper">
+				<div class="footer-item">
+					<div class="footer-wrap__item">
+						<div class="footer-logo">
+							<img src="assets/images/footer-logo.svg" alt="Antnea">
+							<div class="footer-logo__text">
+								© 2016-2021 Antynea Form. <br>
+								все права защищены.
+							</div>
+						</div>
+						<div class="footer-wrap__item">
+							<ul class="footer-list footer-mobile-list">
+								<li class="footer-list__item footer-list__item_upper">
+									группа компаний <br> Антинея
+								</li>
+								<li class="footer-list__item">
+									<a href="#" class="footer-list__link footer-list__link-inactive">
+										antynea.pl
+									</a>
+								</li>
+								<li class="footer-list__item">
+									<a href="#" class="footer-list__link footer-list__link-inactive">
+										antynea.com
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-item">
+					<ul class="footer-list footer-list__item-menu">
+						<li class="footer-list__item">
+							<a href="/about-company.html" class="footer-list__link">
+								О компании
+							</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/blog-page.html" class="footer-list__link">
+								блог
+							</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/contacts.html" class="footer-list__link">
+								КОнтакты
+							</a>
+						</li>
+					</ul>
+					<ul class="footer-list">
+						<li class="footer-list__item">
+							<a href="/living.html" class="footer-list__link">
+								LIVING & COMFORT
+							</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/motion.html" class="footer-list__link">
+								MOTION
+							</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/industrial.html" class="footer-list__link">
+								INDUSTRIAL
+							</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/duplicate-serv.html" class="footer-list__link">
+								Дублированные материалы и услуги по дублированию
+							</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/foam-details.html" class="footer-list__link">
+								Формованные детали и услуги по формовке
+							</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/cutting.html" class="footer-list__link">
+								Контурная резка
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<a href="https://www.imedia.by/" target="_blank" class="development">
+				разработка — imedia
+			</a>
+		</div>
+	</footer>
+	<div class="order-popup">
+		<div class="order-popup-content">
+			<div class="order-popup-header">
+				<div class="close-order-popup">
+					<img src="assets/images/close.svg" alt="Antnea">
+				</div>
+				<div class="order-popup-title" data-form-title="Заказать"></div>
+			</div>
+			<form class="order-popup-form">
+				<label class="pure-material-textfield-outlined">
+					<input type="text" class="order-popup__input" id="name" name="name" placeholder=" " required>
+					<span>
+						Имя
+					</span>
+				</label>
+				<label class="pure-material-textfield-outlined">
+					<input type="email" class="order-popup__input" id="email" name="email" placeholder=" " required>
+					<span>
+						email
+					</span>
+				</label>
+				<label class="pure-material-textfield-outlined">
+					<input type="tel" class="order-popup__input" id="phone" name="phone" placeholder=" " required>
+					<span>
+						телефон
+					</span>
+				</label>
+				<label class="pure-material-textfield-outlined">
+					<input type="text" class="order-popup__input" id="product" name="product" placeholder=" " required>
+					<span>
+						продукт
+					</span>
+				</label>
+				<label class="pure-material-textfield-outlined">
+					<input type="text" class="order-popup__input" id="message" name="message" placeholder=" ">
+					<span>
+						сообщение
+					</span>
+				</label>
+				<button class="order-popup__btn" type='submit'>Отправить</button>
+			</form>
+		</div>
+		<div class="order-popup-success">
+			<div class="close-order-popup close-order-popup__submit">
+				<img src="assets/images/close.svg" alt="Antnea">
+			</div>
+			<div class="order-popup-success__wrapper">
+				<div class="success-submit">
+					<img src="assets/images/submit.svg" alt="Submit">
+				</div>
+				<div class="submit-title submit-text">
+					Спасибо! сообщение отправлено.
+				</div>
+				<div class="submit-subtitle submit-text">
+					Наши менеджеры уже сражаются за право обработать заявку.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='tablePopupClassic' class="table-popup">
+		<div class="table-popup-content">
+			<h1 class="table-popup__title">
+				CLASSIC LINE - акустический ППУ легких марок AST
+			</h1>
+			<div class="close-table-popup">
+				<img src="assets/images/close.svg" alt="Antnea">
+			</div>
+			<div data-simplebar class="table-wrapper" id="meElem">
+				<table>
+					<caption class="table-title">Физикомеханические характеристики ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Кажущаяся плотность, кг/м3, ГОСТ 409 (ISO-845)</th>
+							<th>Напряжение при сжатии (40% деформация), кПа, ГОСТ 26605 (ISO 3386)</th>
+							<th>Относительное удлинение при разрыве, %, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Предел прочности при разрыве, кПа, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Остаточная деформация при 50% сжатии в течение 72 часов при температуре 23°С, %, не более, ГОСТ 29089 (ISO 1856 A)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<caption class="table-title">Рекомендации по использованию ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Акустика</th>
+							<th>Элементы салона транспортных средств и прочей техники</th>
+							<th>Внутренняя отделка транспортных средств, декор (выпускается в виде рулонов для дальнейшего ламинирования)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id='tablePopupHard' class="table-popup">
+		<div class="table-popup-content">
+			<h1 class="table-popup__title">
+				HARD TOUCH - акустический ППУ легких марок AST
+			</h1>
+			<div class="close-table-popup">
+				<img src="assets/images/close.svg" alt="Antnea">
+			</div>
+			<div data-simplebar class="table-wrapper" id="meElem">
+				<table>
+					<caption class="table-title">Физикомеханические характеристики ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Кажущаяся плотность, кг/м3, ГОСТ 409 (ISO-845)</th>
+							<th>Напряжение при сжатии (40% деформация), кПа, ГОСТ 26605 (ISO 3386)</th>
+							<th>Относительное удлинение при разрыве, %, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Предел прочности при разрыве, кПа, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Остаточная деформация при 50% сжатии в течение 72 часов при температуре 23°С, %, не более, ГОСТ 29089 (ISO 1856 A)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<caption class="table-title">Рекомендации по использованию ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Акустика</th>
+							<th>Элементы салона транспортных средств и прочей техники</th>
+							<th>Внутренняя отделка транспортных средств, декор (выпускается в виде рулонов для дальнейшего ламинирования)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id='tablePopupSoft' class="table-popup">
+		<div class="table-popup-content">
+			<h1 class="table-popup__title">
+				SOFT TOUCH - акустический ППУ легких марок AST
+			</h1>
+			<div class="close-table-popup">
+				<img src="assets/images/close.svg" alt="Antnea">
+			</div>
+			<div data-simplebar class="table-wrapper" id="meElem">
+				<table>
+					<caption class="table-title">Физикомеханические характеристики ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Кажущаяся плотность, кг/м3, ГОСТ 409 (ISO-845)</th>
+							<th>Напряжение при сжатии (40% деформация), кПа, ГОСТ 26605 (ISO 3386)</th>
+							<th>Относительное удлинение при разрыве, %, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Предел прочности при разрыве, кПа, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Остаточная деформация при 50% сжатии в течение 72 часов при температуре 23°С, %, не более, ГОСТ 29089 (ISO 1856 A)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<caption class="table-title">Рекомендации по использованию ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Акустика</th>
+							<th>Элементы салона транспортных средств и прочей техники</th>
+							<th>Внутренняя отделка транспортных средств, декор (выпускается в виде рулонов для дальнейшего ламинирования)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id='tablePopupSmart' class="table-popup">
+		<div class="table-popup-content">
+			<h1 class="table-popup__title">
+				SMART MEMORY - акустический ППУ легких марок AST
+			</h1>
+			<div class="close-table-popup">
+				<img src="assets/images/close.svg" alt="Antnea">
+			</div>
+			<div data-simplebar class="table-wrapper" id="meElem">
+				<table>
+					<caption class="table-title">Физикомеханические характеристики ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Кажущаяся плотность, кг/м3, ГОСТ 409 (ISO-845)</th>
+							<th>Напряжение при сжатии (40% деформация), кПа, ГОСТ 26605 (ISO 3386)</th>
+							<th>Относительное удлинение при разрыве, %, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Предел прочности при разрыве, кПа, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Остаточная деформация при 50% сжатии в течение 72 часов при температуре 23°С, %, не более, ГОСТ 29089 (ISO 1856 A)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<caption class="table-title">Рекомендации по использованию ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Акустика</th>
+							<th>Элементы салона транспортных средств и прочей техники</th>
+							<th>Внутренняя отделка транспортных средств, декор (выпускается в виде рулонов для дальнейшего ламинирования)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id='tablePopupElastic' class="table-popup">
+		<div class="table-popup-content">
+			<h1 class="table-popup__title">
+				ELASTIC LINE - акустический ППУ легких марок AST
+			</h1>
+			<div class="close-table-popup">
+				<img src="assets/images/close.svg" alt="Antnea">
+			</div>
+			<div data-simplebar class="table-wrapper" id="meElem">
+				<table>
+					<caption class="table-title">Физикомеханические характеристики ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Кажущаяся плотность, кг/м3, ГОСТ 409 (ISO-845)</th>
+							<th>Напряжение при сжатии (40% деформация), кПа, ГОСТ 26605 (ISO 3386)</th>
+							<th>Относительное удлинение при разрыве, %, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Предел прочности при разрыве, кПа, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Остаточная деформация при 50% сжатии в течение 72 часов при температуре 23°С, %, не более, ГОСТ 29089 (ISO 1856 A)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<caption class="table-title">Рекомендации по использованию ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Акустика</th>
+							<th>Элементы салона транспортных средств и прочей техники</th>
+							<th>Внутренняя отделка транспортных средств, декор (выпускается в виде рулонов для дальнейшего ламинирования)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id='tablePopupDecor' class="table-popup">
+		<div class="table-popup-content">
+			<h1 class="table-popup__title">
+				DECOR LINE - акустический ППУ легких марок AST
+			</h1>
+			<div class="close-table-popup">
+				<img src="assets/images/close.svg" alt="Antnea">
+			</div>
+			<div data-simplebar class="table-wrapper" id="meElem">
+				<table>
+					<caption class="table-title">Физикомеханические характеристики ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Кажущаяся плотность, кг/м3, ГОСТ 409 (ISO-845)</th>
+							<th>Напряжение при сжатии (40% деформация), кПа, ГОСТ 26605 (ISO 3386)</th>
+							<th>Относительное удлинение при разрыве, %, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Предел прочности при разрыве, кПа, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Остаточная деформация при 50% сжатии в течение 72 часов при температуре 23°С, %, не более, ГОСТ 29089 (ISO 1856 A)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<caption class="table-title">Рекомендации по использованию ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Акустика</th>
+							<th>Элементы салона транспортных средств и прочей техники</th>
+							<th>Внутренняя отделка транспортных средств, декор (выпускается в виде рулонов для дальнейшего ламинирования)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id='tablePopupInterior' class="table-popup">
+		<div class="table-popup-content">
+			<h1 class="table-popup__title">
+				INTERIOR LINE - акустический ППУ легких марок AST
+			</h1>
+			<div class="close-table-popup">
+				<img src="assets/images/close.svg" alt="Antnea">
+			</div>
+			<div data-simplebar class="table-wrapper" id="meElem">
+				<table>
+					<caption class="table-title">Физикомеханические характеристики ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Кажущаяся плотность, кг/м3, ГОСТ 409 (ISO-845)</th>
+							<th>Напряжение при сжатии (40% деформация), кПа, ГОСТ 26605 (ISO 3386)</th>
+							<th>Относительное удлинение при разрыве, %, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Предел прочности при разрыве, кПа, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Остаточная деформация при 50% сжатии в течение 72 часов при температуре 23°С, %, не более, ГОСТ 29089 (ISO 1856 A)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<caption class="table-title">Рекомендации по использованию ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Акустика</th>
+							<th>Элементы салона транспортных средств и прочей техники</th>
+							<th>Внутренняя отделка транспортных средств, декор (выпускается в виде рулонов для дальнейшего ламинирования)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id='tablePopupSealing' class="table-popup">
+		<div class="table-popup-content">
+			<h1 class="table-popup__title">
+				SEALING LINE - акустический ППУ легких марок AST
+			</h1>
+			<div class="close-table-popup">
+				<img src="assets/images/close.svg" alt="Antnea">
+			</div>
+			<div data-simplebar class="table-wrapper" id="meElem">
+				<table>
+					<caption class="table-title">Физикомеханические характеристики ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Кажущаяся плотность, кг/м3, ГОСТ 409 (ISO-845)</th>
+							<th>Напряжение при сжатии (40% деформация), кПа, ГОСТ 26605 (ISO 3386)</th>
+							<th>Относительное удлинение при разрыве, %, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Предел прочности при разрыве, кПа, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Остаточная деформация при 50% сжатии в течение 72 часов при температуре 23°С, %, не более, ГОСТ 29089 (ISO 1856 A)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<caption class="table-title">Рекомендации по использованию ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Акустика</th>
+							<th>Элементы салона транспортных средств и прочей техники</th>
+							<th>Внутренняя отделка транспортных средств, декор (выпускается в виде рулонов для дальнейшего ламинирования)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id='tablePopupPackaging' class="table-popup">
+		<div class="table-popup-content">
+			<h1 class="table-popup__title">
+				Packaging line - акустический ППУ легких марок AST
+			</h1>
+			<div class="close-table-popup">
+				<img src="assets/images/close.svg" alt="Antnea">
+			</div>
+			<div data-simplebar class="table-wrapper" id="meElem">
+				<table>
+					<caption class="table-title">Физикомеханические характеристики ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Кажущаяся плотность, кг/м3, ГОСТ 409 (ISO-845)</th>
+							<th>Напряжение при сжатии (40% деформация), кПа, ГОСТ 26605 (ISO 3386)</th>
+							<th>Относительное удлинение при разрыве, %, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Предел прочности при разрыве, кПа, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Остаточная деформация при 50% сжатии в течение 72 часов при температуре 23°С, %, не более, ГОСТ 29089 (ISO 1856 A)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<caption class="table-title">Рекомендации по использованию ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Акустика</th>
+							<th>Элементы салона транспортных средств и прочей техники</th>
+							<th>Внутренняя отделка транспортных средств, декор (выпускается в виде рулонов для дальнейшего ламинирования)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id='tablePopupSafety' class="table-popup">
+		<div class="table-popup-content">
+			<h1 class="table-popup__title">
+				SAfety line - акустический ППУ легких марок AST
+			</h1>
+			<div class="close-table-popup">
+				<img src="assets/images/close.svg" alt="Antnea">
+			</div>
+			<div data-simplebar class="table-wrapper" id="meElem">
+				<table>
+					<caption class="table-title">Физикомеханические характеристики ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Кажущаяся плотность, кг/м3, ГОСТ 409 (ISO-845)</th>
+							<th>Напряжение при сжатии (40% деформация), кПа, ГОСТ 26605 (ISO 3386)</th>
+							<th>Относительное удлинение при разрыве, %, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Предел прочности при разрыве, кПа, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Остаточная деформация при 50% сжатии в течение 72 часов при температуре 23°С, %, не более, ГОСТ 29089 (ISO 1856 A)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<caption class="table-title">Рекомендации по использованию ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Акустика</th>
+							<th>Элементы салона транспортных средств и прочей техники</th>
+							<th>Внутренняя отделка транспортных средств, декор (выпускается в виде рулонов для дальнейшего ламинирования)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div id='tablePopupSound' class="table-popup">
+		<div class="table-popup-content">
+			<h1 class="table-popup__title">
+				Sound line - акустический ППУ легких марок AST
+			</h1>
+			<div class="close-table-popup">
+				<img src="assets/images/close.svg" alt="Antnea">
+			</div>
+			<div data-simplebar class="table-wrapper" id="meElem">
+				<table>
+					<caption class="table-title">Физикомеханические характеристики ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Кажущаяся плотность, кг/м3, ГОСТ 409 (ISO-845)</th>
+							<th>Напряжение при сжатии (40% деформация), кПа, ГОСТ 26605 (ISO 3386)</th>
+							<th>Относительное удлинение при разрыве, %, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Предел прочности при разрыве, кПа, не менее, ГОСТ 15873-2017 (ISO 1798)</th>
+							<th>Остаточная деформация при 50% сжатии в течение 72 часов при температуре 23°С, %, не более, ГОСТ 29089 (ISO 1856 A)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td>6,0±2,0</td>
+							<td>3,0±0,6</td>
+							<td>100</td>
+							<td>80</td>
+							<td>6</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<caption class="table-title">Рекомендации по использованию ППУ категории Motion</caption>
+					<thead>
+						<tr>
+							<th>Марка</th>
+							<th>Акустика</th>
+							<th>Элементы салона транспортных средств и прочей техники</th>
+							<th>Внутренняя отделка транспортных средств, декор (выпускается в виде рулонов для дальнейшего ламинирования)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>AST 16 30</td>
+							<td><img src="assets/images/check.svg" alt="Antnea"></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="./assets/libs/js/jquery.min.js"></script>
+	<script src="./assets/libs/js/svg4everybody.min.js"></script>
+	<script src="./assets/libs/js/lozad.min.js"></script>
+	<script src="./assets/scripts/app.min.js"></script>
+</body>
+
+</html>

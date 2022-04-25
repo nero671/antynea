@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--Page Title-->
+	<title>Title</title>
+	<!--SEO-->
+	<meta name="description" content="Description">
+	<meta name="keywords" content="keyword1, keyword2">
+	<!--Additional meta tags-->
+	<meta name="msthemecompatible" content="no">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<!--Favicons-->
+	<!-- <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png"> -->
+	<!-- <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png"> -->
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon.png">
+	<link rel="manifest" href="./favicons/site.webmanifest">
+	<link rel="mask-icon" href="./favicons/favicon.png" color="#5bbad5">
+	<link rel="shortcut icon" href="./favicons/favicon.png">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="./favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<!--Styles-->
+	<link id="app-css" rel="stylesheet" href="./assets/styles/app.min.css">
+	<link href="PTRootUI-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link href="PTRootUI-Medium.woff2" as="font" type="font/woff2" crossorigin>
+	<link href="PTRootUI-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<!-- <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+  <script type="text/javascript">
+    // Создает обработчик события window.onLoad
+    YMaps.jQuery(function () {
+        // Создает экземпляр карты и привязывает его к созданному контейнеру
+        var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+        // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+        var point = new YMaps.GeoPoint(37.609218,55.753559); // Координаты центра Москвы
+        map.setCenter(point);
+    })
+  </script> -->
+	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+	<script>
+		document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');
+		if (!('ontouchstart' in document.documentElement)) {
+			document.documentElement.className += ' no-touchevents';
+		} else {
+			document.documentElement.className += ' touchevents';
+		}
+	</script>
+	<script src="https://use.fontawesome.com/e9c73d6974.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"> </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<style>
+		.goods-item__img {
+			cursor: url('../images/order-btn.svg'), auto;
+		}
+
+		.good-item__title {
+			cursor: url('../images/order-btn.svg'), auto;
+		}
+	</style>
+</head>
+
+<body>
+	<noscript>
+		<div class="no-js-warning">Для корректной работы сайта <b>включите JavaScript</b> в браузере</div>
+	</noscript>
+	<div class="mask">
+		<div class="loader"></div>
+	</div>
+	<header class="header">
+		<section id="header" class="header-wht">
+			<div class="container">
+				<a href="/" class="logo header-logo">
+					<img class="logo-img img-black" src="assets/images/menu-logo.svg" alt="Antnea">
+				</a>
+				<button class="header-menu btn-black"><span class="menu-symbol-btn">+</span> <span class="menu-title-btn" data-close-menu='Меню' data-open-menu='Закрыть'>Меню</span></button>
+				<ul class="header-btns">
+					<li class="header-btns__item">
+						<a href="/contacts.html" data-hover="Контакты" class="header-links-black header-contacts hide-btn">Контакты</a>
+					</li>
+					<li class="header-btns__item">
+						<a href="#" data-hover="Заказать" class="header-links-black header-order">Заказать</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="menu">
+			<div class="container">
+				<div class="menu-container">
+					<nav class="nav">
+						<div class="nav-link__wrapper">
+							<div href="#" class="nav-link open-help-menu">
+								Пены
+							</div>
+							<ul class="nav-link__list">
+								<li class="nav-link__list-item">
+									<a href="/living.html" data-hover="LIVING & COMFORT" class="nav-link__list-item_link">
+										LIVING & COMFORT
+									</a>
+								</li>
+								<li class="nav-link__list-item">
+									<a href="/motion.html" data-hover="MOTION" class="nav-link__list-item_link">
+										MOTION
+									</a>
+								</li>
+								<li class="nav-link__list-item">
+									<a href="/industrial.html" data-hover="INDUSTRIAL" class="nav-link__list-item_link">
+										INDUSTRIAL
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a href="/duplicate-serv.html" class="nav-link">
+							Дублированные материалы и услуги по дублированию
+						</a>
+						<a href="/foam-details.html" class="nav-link">
+							Формованные детали и услуги по формовке
+						</a>
+						<a href="/cutting.html" class="nav-link">
+							Контурная резка
+						</a>
+					</nav>
+					<ul class="about-company about-company__menu">
+						<li class="about-company__list-item">
+							<a href="/about-company.html" data-hover="О компании" class="about-company__link">
+								О компании
+							</a>
+						</li>
+						<li class="about-company__list-item">
+							<a href="/blog-page.html" data-hover="Блог" class="about-company__link">
+								Блог
+							</a>
+						</li>
+						<li class="about-company__list-item">
+							<a href="/contacts.html" data-hover="Контакты" class="about-company__link">
+								Контакты
+							</a>
+						</li>
+						<li class="about-company__list-item">
+							<hr class="header-line">
+						</li>
+						<li class="about-company__list-item">
+							<a href="tel:+375 17 270 07 45" data-hover="+375 17 270 07 45" class="about-company__link">
+								+375 17 270 07 45
+							</a>
+						</li>
+						<li class="about-company__list-item">
+							<a href="info@antyneaform.com" data-hover=" info@antyneaform.com" class="about-company__link">
+								info@antyneaform.com
+							</a>
+						</li>
+						<li class="menu-lang__btns">
+							<div class="menu-lang__btns-block">
+								<button class="lang-btn active">Rus</button>
+								<button class="lang-btn">Eng</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<ul class="social-link">
+					<li class="about-company__list-item_inst">
+						<a href="#" data-hover="Instagram" class="inst">Instagram</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</header>
+	<main class="main">
+		<div class="error-page">
+			<h1 class="error-page__title">
+				404
+			</h1>
+			<div class="error-page-subtitle">
+				нет такой страницы
+			</div>
+		</div>
+	</main>
+	<div class="order-popup">
+		<div class="order-popup-content">
+			<div class="order-popup-header">
+				<div class="close-order-popup">
+					<img src="assets/images/close.svg" alt="Antnea">
+				</div>
+				<div class="order-popup-title" data-form-title="Заказать"></div>
+			</div>
+			<form class="order-popup-form">
+				<label class="pure-material-textfield-outlined">
+					<input type="text" class="order-popup__input" id="name" name="name" placeholder=" " required>
+					<span>
+						Имя
+					</span>
+				</label>
+				<label class="pure-material-textfield-outlined">
+					<input type="email" class="order-popup__input" id="email" name="email" placeholder=" " required>
+					<span>
+						email
+					</span>
+				</label>
+				<label class="pure-material-textfield-outlined">
+					<input type="tel" class="order-popup__input" id="phone" name="phone" placeholder=" " required>
+					<span>
+						телефон
+					</span>
+				</label>
+				<label class="pure-material-textfield-outlined">
+					<input type="text" class="order-popup__input" id="product" name="product" placeholder=" " required>
+					<span>
+						продукт
+					</span>
+				</label>
+				<label class="pure-material-textfield-outlined">
+					<input type="text" class="order-popup__input" id="message" name="message" placeholder=" ">
+					<span>
+						сообщение
+					</span>
+				</label>
+				<button class="order-popup__btn" type='submit'>Отправить</button>
+			</form>
+		</div>
+		<div class="order-popup-success">
+			<div class="close-order-popup close-order-popup__submit">
+				<img src="assets/images/close.svg" alt="Antnea">
+			</div>
+			<div class="order-popup-success__wrapper">
+				<div class="success-submit">
+					<img src="assets/images/submit.svg" alt="Submit">
+				</div>
+				<div class="submit-title submit-text">
+					Спасибо! сообщение отправлено.
+				</div>
+				<div class="submit-subtitle submit-text">
+					Наши менеджеры уже сражаются за право обработать заявку.
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./assets/libs/js/jquery.min.js"></script>
+	<script src="./assets/libs/js/svg4everybody.min.js"></script>
+	<script src="./assets/libs/js/lozad.min.js"></script>
+	<script src="./assets/scripts/app.min.js"></script>
+</body>
+
+</html>

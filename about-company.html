@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--Page Title-->
+	<title>Title</title>
+	<!--SEO-->
+	<meta name="description" content="Description">
+	<meta name="keywords" content="keyword1, keyword2">
+	<!--Additional meta tags-->
+	<meta name="msthemecompatible" content="no">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<!--Favicons-->
+	<!-- <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png"> -->
+	<!-- <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png"> -->
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon.png">
+	<link rel="manifest" href="./favicons/site.webmanifest">
+	<link rel="mask-icon" href="./favicons/favicon.png" color="#5bbad5">
+	<link rel="shortcut icon" href="./favicons/favicon.png">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="./favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<!--Styles-->
+	<link id="app-css" rel="stylesheet" href="./assets/styles/app.min.css">
+	<link href="PTRootUI-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link href="PTRootUI-Medium.woff2" as="font" type="font/woff2" crossorigin>
+	<link href="PTRootUI-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<!-- <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+  <script type="text/javascript">
+    // Создает обработчик события window.onLoad
+    YMaps.jQuery(function () {
+        // Создает экземпляр карты и привязывает его к созданному контейнеру
+        var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+        // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+        var point = new YMaps.GeoPoint(37.609218,55.753559); // Координаты центра Москвы
+        map.setCenter(point);
+    })
+  </script> -->
+	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+	<script>
+		document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');
+		if (!('ontouchstart' in document.documentElement)) {
+			document.documentElement.className += ' no-touchevents';
+		} else {
+			document.documentElement.className += ' touchevents';
+		}
+	</script>
+	<script src="https://use.fontawesome.com/e9c73d6974.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"> </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<style>
+		.goods-item__img {
+			cursor: url('../images/order-btn.svg'), auto;
+		}
+
+		.good-item__title {
+			cursor: url('../images/order-btn.svg'), auto;
+		}
+	</style>
+</head>
+
+<body>
+	<noscript>
+		<div class="no-js-warning">Для корректной работы сайта <b>включите JavaScript</b> в браузере</div>
+	</noscript>
+	<div class="mask">
+		<div class="loader"></div>
+	</div>
+	<header class="header">
+		<section id="header" class="header-wht">
+			<div class="container">
+				<a href="/" class="logo header-logo">
+					<img class="logo-img " src="assets/images/logo.svg" alt="Antnea">
+				</a>
+				<button class="header-menu "><span class="menu-symbol-btn">+</span> <span class="menu-title-btn" data-close-menu='Меню' data-open-menu='Закрыть'>Меню</span></button>
+				<ul class="header-btns">
+					<li class="header-btns__item">
+						<a href="/contacts.html" data-hover="Контакты" class="header-links header-contacts hide-btn">Контакты</a>
+					</li>
+					<li class="header-btns__item">
+						<a href="#" data-hover="Заказать" class="header-links header-order">Заказать</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="menu">
+			<div class="container">
+				<div class="menu-container">
+					<nav class="nav">
+						<div class="nav-link__wrapper">
+							<div href="#" class="nav-link open-help-menu">
+								Пены
+							</div>
+							<ul class="nav-link__list">
+								<li class="nav-link__list-item">
+									<a href="/living.html" data-hover="LIVING & COMFORT" class="nav-link__list-item_link">
+										LIVING & COMFORT
+									</a>
+								</li>
+								<li class="nav-link__list-item">
+									<a href="/motion.html" data-hover="MOTION" class="nav-link__list-item_link">
+										MOTION
+									</a>
+								</li>
+								<li class="nav-link__list-item">
+									<a href="/industrial.html" data-hover="INDUSTRIAL" class="nav-link__list-item_link">
+										INDUSTRIAL
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a href="/duplicate-serv.html" class="nav-link">
+							Дублированные материалы и услуги по дублированию
+						</a>
+						<a href="/foam-details.html" class="nav-link">
+							Формованные детали и услуги по формовке
+						</a>
+						<a href="/cutting.html" class="nav-link">
+							Контурная резка
+						</a>
+					</nav>
+					<ul class="about-company about-company__menu">
+						<li class="about-company__list-item">
+							<a href="/about-company.html" data-hover="О компании" class="about-company__link">
+								О компании
+							</a>
+						</li>
+						<li class="about-company__list-item">
+							<a href="/blog-page.html" data-hover="Блог" class="about-company__link">
+								Блог
+							</a>
+						</li>
+						<li class="about-company__list-item">
+							<a href="/contacts.html" data-hover="Контакты" class="about-company__link">
+								Контакты
+							</a>
+						</li>
+						<li class="about-company__list-item">
+							<hr class="header-line">
+						</li>
+						<li class="about-company__list-item">
+							<a href="tel:+375 17 270 07 45" data-hover="+375 17 270 07 45" class="about-company__link">
+								+375 17 270 07 45
+							</a>
+						</li>
+						<li class="about-company__list-item">
+							<a href="info@antyneaform.com" data-hover=" info@antyneaform.com" class="about-company__link">
+								info@antyneaform.com
+							</a>
+						</li>
+						<li class="menu-lang__btns">
+							<div class="menu-lang__btns-block">
+								<button class="lang-btn active">Rus</button>
+								<button class="lang-btn">Eng</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<ul class="social-link">
+					<li class="about-company__list-item_inst">
+						<a href="#" data-hover="Instagram" class="inst">Instagram</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</header>
+	<main class="main">
+		<div class="about-company-title">
+			<div class="video-container">
+				<video class="lozad" autoplay loop muted playsinline preload="metadata" poster="assets/images/poster-3.png" width="100%">
+					<source data-lazysrc="assets/images/about-company-video-bg-2.mp4" type="video/mp4">
+					Sorry, your browser doesn't support embedded videos.
+				</video>
+			</div>
+			<div class="video-conterner-shadow"></div>
+			<h1 class="about-company-title__title">
+				О компании
+			</h1>
+		</div>
+		<div class="about-company-priority test">
+			<h1 class="about-company-priority__title">
+				YOUR SUCCESS IS OUR PRIORITY
+			</h1>
+			<div class="about-company-priority__text">
+				<p class="about-company-priority__text-item">
+					Antynea Form products are part of a significant number of objects that surround us in everyday life, meaning that our quality guarantor determines the comfort of life for many people.
+				</p>
+				<p class="about-company-priority__text-item">
+					Being one of the leading polyurethane foam manufacturers in the CIS, Antynea Form is responsible for its products and provides high-quality business solutions.
+				</p>
+			</div>
+		</div>
+		<div class="about-company-quality">
+			<h2 class="about-company-quality__title">
+				Quality & Innovation
+			</h2>
+			<div class="about-company-quality__info">
+				<div class="quality-info__item">
+					<p class="quality-info__text">
+						<b>The specialized knowledge</b> accumulated over decades, advanced automated production, own lab, and multi-level control ensure consistently high standards of the products.
+					</p>
+					<p class="quality-info__text">
+						A qualified engineering staff monitors the entire production cycle from recipe creation to quality control of finished goods. </p>
+				</div>
+				<div class="quality-info__item">
+					<div class="quality-info-addition">
+						The company uses exclusively <b>high-quality raw materials</b> from world-class time-tested manufacturers.
+					</div>
+					<div class="quality-info__partners">
+						<img class="quality-info__partners-img" src="assets/images/partner1.png" alt="Antynea">
+						<img class="quality-info__partners-img" src="assets/images/partner2.png" alt="Antynea">
+						<img class="quality-info__partners-img" src="assets/images/partner3.png" alt="Antynea">
+						<img class="quality-info__partners-img" src="assets/images/partner4.png" alt="Antynea">
+						<img class="quality-info__partners-img" src="assets/images/partner5.png" alt="Antynea">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-company-description">
+			<div class="about-company-description__bg">
+				<div class="about-company__play">
+					<img src="assets/images/play.svg" alt="Antynea">
+				</div>
+				<img src="assets/images/about-cmp-bg.png" alt="Antynea">
+			</div>
+			<div class="about-company__description-list">
+				<div class="description-list__content">
+					<div class="description-list__content-item">
+						<h2 class="content-item__title">
+							Building partnership
+						</h2>
+						<div class="content-item__subtitle">
+							The sales team will promptly provide an individual approach in any convenient way at any convenient time.
+						</div>
+					</div>
+					<div class="description-list__content-item">
+						<p class="content-item__text">
+							<b>Supplier reliability</b> is a crucial element of any company's success and sustainability.
+						</p>
+						<p class="content-item__text">
+							<b>Antynea Form is guaranteed to save you time and resources</b> with constant support throughout the entire interaction cycle.
+						</p>
+						<p class="content-item__text">
+							The R&D department is <b>constructing the future of foam production,</b> meeting all sorts of customer and market requirements.
+						</p>
+					</div>
+				</div>
+				<div class="description-list__content">
+					<div class="description-list__content-item">
+						<h2 class="content-item__title">
+							Smooth logistics & Comprehensive geographical coverage
+						</h2>
+						<div class="content-item__subtitle">
+							Antynea Form also delivers in small batches and offers free storage in the warehouses.
+						</div>
+					</div>
+					<div class="description-list__content-item">
+						<p class="content-item__text">
+							<b>Numerous offices</b> in <b>Warsaw</b>, <b>Moscow</b>, and <b>Minsk</b> along with the truck fleet capable of transporting over 500 m³ of products per week, allow us to solve the main logistic challenges of the client as quickly and reliably as possible.
+						</p>
+					</div>
+				</div>
+				<div class="description-list__content">
+					<div class="description-list__content-item">
+						<h2 class="content-item__title">
+							Health & Environmental protection
+						</h2>
+						<div class="content-item__subtitle">
+							Let us take care of the future together: paper packing is available!
+						</div>
+					</div>
+					<div class="description-list__content-item">
+						<p class="content-item__text">
+							Antynea Form shares <b>the European principles of environmental friendliness</b> of production and products. The enterprise strictly adheres to the requirements for labor safety and protection and uses only modern treatment facilities.
+						</p>
+						<div class="content-item__text">
+							Antynea Form has organized separate collection and processing of production waste.
+						</div>
+					</div>
+				</div>
+				<div class="description-list__content">
+					<div class="description-list__content-item">
+						<div class="content-item__subtitle" style="margin-top: 0px; margin-bottom: 20px;">
+							Feel free to request a quote or ask a question;
+						</div>
+						<div class="content-item__subtitle" style="margin-top: 0px; margin-bottom: 20px;">
+							simply click <a href="#" class="content-item__subtitle-link">here</a>, and our team will do their best to assist you.
+						</div>
+					</div>
+					<div class="description-list__content-item">
+						<p class="content-item__last-text">
+							Antynea Form – proud partner of the
+						</p>
+						<div class="content-item__last-text">
+							Antynea group of companies.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer black panel hidden-header">
+		<div class="container-animate">
+			<div class="link-wrapper">
+				<div class="footer-link-wrapper">
+					<a href="#" class="footer-link">
+						info@antyneaform.com
+					</a>
+				</div>
+			</div>
+			<div class="footer-image-wrapper">
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img1.png" alt="Antnea">
+				</a>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img2.png" alt="Antnea">
+				</a>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img3.png" alt="Antnea">
+				</a>
+				<div class="footer-image-link">
+					<a href="#" class="image-link">
+						@antynea_group
+						<i class="fa fa-heart"></i>
+					</a>
+				</div>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img4.png" alt="Antnea">
+				</a>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img5.png" alt="Antnea">
+				</a>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img6.png" alt="Antnea">
+				</a>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img7.png" alt="Antnea">
+				</a>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img8.png" alt="Antnea">
+				</a>
+				<a href="#" class="footer-image-wrapper__link">
+					<img class="footre-image-wrapper__img" src="assets/images/footer-img9.png" alt="Antnea">
+				</a>
+			</div>
+			<div class="mobile-footer-image__slider-wrapper">
+				<div class="footer-image-link">
+					<a href="#" class="image-link">
+						@antynea_group
+						<i class="fa fa-heart"></i>
+					</a>
+				</div>
+				<div class="footer-slider">
+					<div class="footer-slider-wrapper swiper-wrapper">
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img1.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img2.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img3.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img4.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img5.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img6.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img7.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img8.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img9.png" alt="Antnea">
+							</a>
+						</div>
+						<div class="footer-slider__img swiper-slide">
+							<a href="#" class="">
+								<img class="" src="assets/images/footer-img3.png" alt="Antnea">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-wrapper">
+				<div class="footer-item">
+					<div class="footer-wrap__item">
+						<div class="footer-logo">
+							<img src="assets/images/footer-logo.svg" alt="Antnea">
+							<div class="footer-logo__text">
+								© 2016-2021 Antynea Form. <br>
+								все права защищены.
+							</div>
+						</div>
+						<div class="footer-wrap__item">
+							<ul class="footer-list footer-mobile-list">
+								<li class="footer-list__item footer-list__item_upper">
+									группа компаний <br> Антинея
+								</li>
+								<li class="footer-list__item">
+									<a href="#" class="footer-list__link footer-list__link-inactive">
+										antynea.pl
+									</a>
+								</li>
+								<li class="footer-list__item">
+									<a href="#" class="footer-list__link footer-list__link-inactive">
+										antynea.com
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-item">
+					<ul class="footer-list footer-list__item-menu">
+						<li class="footer-list__item">
+							<a href="/about-company.html" class="footer-list__link">
+								О компании
+							</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/blog-page.html" class="footer-list__link">
+								блог
+							</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/contacts.html" class="footer-list__link">
+								КОнтакты
+							</a>
+						</li>
+					</ul>
+					<ul class="footer-list">
+						<li class="footer-list__item">
+							<a href="/living.html" class="footer-list__link">
+								LIVING & COMFORT
+							</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/motion.html" class="footer-list__link">
+								MOTION
+							</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/industrial.html" class="footer-list__link">
+								INDUSTRIAL
+							</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/duplicate-serv.html" class="footer-list__link">
+								Дублированные материалы и услуги по дублированию
+							</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/foam-details.html" class="footer-list__link">
+								Формованные детали и услуги по формовке
+							</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/cutting.html" class="footer-list__link">
+								Контурная резка
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<a href="https://www.imedia.by/" target="_blank" class="development">
+				разработка — imedia
+			</a>
+		</div>
+	</footer>
+	<div class="order-popup">
+		<div class="order-popup-content">
+			<div class="order-popup-header">
+				<div class="close-order-popup">
+					<img src="assets/images/close.svg" alt="Antnea">
+				</div>
+				<div class="order-popup-title" data-form-title="Заказать"></div>
+			</div>
+			<form class="order-popup-form">
+				<label class="pure-material-textfield-outlined">
+					<input type="text" class="order-popup__input" id="name" name="name" placeholder=" " required>
+					<span>
+						Имя
+					</span>
+				</label>
+				<label class="pure-material-textfield-outlined">
+					<input type="email" class="order-popup__input" id="email" name="email" placeholder=" " required>
+					<span>
+						email
+					</span>
+				</label>
+				<label class="pure-material-textfield-outlined">
+					<input type="tel" class="order-popup__input" id="phone" name="phone" placeholder=" " required>
+					<span>
+						телефон
+					</span>
+				</label>
+				<label class="pure-material-textfield-outlined">
+					<input type="text" class="order-popup__input" id="product" name="product" placeholder=" " required>
+					<span>
+						продукт
+					</span>
+				</label>
+				<label class="pure-material-textfield-outlined">
+					<input type="text" class="order-popup__input" id="message" name="message" placeholder=" ">
+					<span>
+						сообщение
+					</span>
+				</label>
+				<button class="order-popup__btn" type='submit'>Отправить</button>
+			</form>
+		</div>
+		<div class="order-popup-success">
+			<div class="close-order-popup close-order-popup__submit">
+				<img src="assets/images/close.svg" alt="Antnea">
+			</div>
+			<div class="order-popup-success__wrapper">
+				<div class="success-submit">
+					<img src="assets/images/submit.svg" alt="Submit">
+				</div>
+				<div class="submit-title submit-text">
+					Спасибо! сообщение отправлено.
+				</div>
+				<div class="submit-subtitle submit-text">
+					Наши менеджеры уже сражаются за право обработать заявку.
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./assets/libs/js/jquery.min.js"></script>
+	<script src="./assets/libs/js/svg4everybody.min.js"></script>
+	<script src="./assets/libs/js/lozad.min.js"></script>
+	<script src="./assets/scripts/app.min.js"></script>
+</body>
+
+</html>
