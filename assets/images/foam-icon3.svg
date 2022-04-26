@@ -1,0 +1,11 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11.9998" cy="11.9998" r="2.77272" stroke="#0F0D0E"/>
+<circle cx="12.0012" cy="2.18181" r="1.68181" stroke="#0F0D0E"/>
+<circle r="1.68181" transform="matrix(0.707079 -0.707135 0.707079 0.707135 5.0576 5.05737)" stroke="#0F0D0E"/>
+<circle r="1.68181" transform="matrix(0.707079 0.707135 -0.707079 0.707135 18.9419 5.05735)" stroke="#0F0D0E"/>
+<circle cx="21.8172" cy="11.9997" r="1.68181" transform="rotate(90 21.8172 11.9997)" stroke="#0F0D0E"/>
+<circle cx="12.0012" cy="21.818" r="1.68181" stroke="#0F0D0E"/>
+<circle r="1.68181" transform="matrix(0.707128 -0.707086 0.707128 0.707086 18.9426 18.9424)" stroke="#0F0D0E"/>
+<circle cx="5.05762" cy="18.9425" r="1.68181" transform="rotate(45 5.05762 18.9425)" stroke="#0F0D0E"/>
+<circle cx="2.18195" cy="11.9997" r="1.68181" transform="rotate(90 2.18195 11.9997)" stroke="#0F0D0E"/>
+</svg>
